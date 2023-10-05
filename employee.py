@@ -41,7 +41,7 @@ class Employee:
         self.outputString.append("Their total pay is " + str(pay) + ".")
         return pay
 
-    def str(self):
+    def __str__(self):
         self.outputString.clear()
         self.get_pay()
         output = self.name
